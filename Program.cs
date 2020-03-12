@@ -108,6 +108,16 @@ namespace genericsIntro
                             Console.WriteLine($"{item.Title} -- {item.Author}");
                         });
                     }
+                    else if (PageDirection == "<")
+                    {
+                        var nextPage = bookPager.GetPreviousPage();
+                        nextPage.ForEach(item =>
+                        {
+                            Console.WriteLine($"{item.Title} -- {item.Author}");
+                        });
+                    }
+
+
                 }
             }
         }
