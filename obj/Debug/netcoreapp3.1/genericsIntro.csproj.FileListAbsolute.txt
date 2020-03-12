@@ -1,0 +1,10 @@
+/Users/taylorcarroll/workspace/C37/genericsIntro/bin/Debug/netcoreapp3.1/genericsIntro.deps.json
+/Users/taylorcarroll/workspace/C37/genericsIntro/bin/Debug/netcoreapp3.1/genericsIntro.runtimeconfig.json
+/Users/taylorcarroll/workspace/C37/genericsIntro/bin/Debug/netcoreapp3.1/genericsIntro.runtimeconfig.dev.json
+/Users/taylorcarroll/workspace/C37/genericsIntro/bin/Debug/netcoreapp3.1/genericsIntro.dll
+/Users/taylorcarroll/workspace/C37/genericsIntro/bin/Debug/netcoreapp3.1/genericsIntro.pdb
+/Users/taylorcarroll/workspace/C37/genericsIntro/obj/Debug/netcoreapp3.1/genericsIntro.csprojAssemblyReference.cache
+/Users/taylorcarroll/workspace/C37/genericsIntro/obj/Debug/netcoreapp3.1/genericsIntro.AssemblyInfoInputs.cache
+/Users/taylorcarroll/workspace/C37/genericsIntro/obj/Debug/netcoreapp3.1/genericsIntro.AssemblyInfo.cs
+/Users/taylorcarroll/workspace/C37/genericsIntro/obj/Debug/netcoreapp3.1/genericsIntro.dll
+/Users/taylorcarroll/workspace/C37/genericsIntro/obj/Debug/netcoreapp3.1/genericsIntro.pdb
