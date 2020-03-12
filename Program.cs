@@ -72,12 +72,54 @@ namespace genericsIntro
             var userInput = Console.ReadLine();
 
             if (userInput == "1")
-            {
-                // Print the movies
+            // {
+            //     // Print the movies
 
-                foreach (var movie in allMovies)
+            //     foreach (var movie in allMovies)
+            //     {
+            //         Console.WriteLine($"{movie.Title} -- {movie.Genre}");
+            //     }
+            // }
+            {
+                //print books
+                var dvdPager = new Pager<DVD>()
                 {
-                    Console.WriteLine($"{movie.Title} -- {movie.Genre}");
+                    ItemsPerPage = 3,
+                    PageNumber = 0,
+                    AllItems = allMovies
+                };
+                foreach (var dvd in dvdPager.GetPage())
+                {
+                    Console.WriteLine($"{dvd.Title} -- {dvd.Genre}");
+                }
+                while (true)
+                {
+                    Console.WriteLine("Type > or < to go Forward or Back, Hit Enter without typing anything to go back.");
+                    var PageDirection = Console.ReadLine();
+                    if (PageDirection == "")
+                    {
+                        break;
+                    }
+                    Console.Clear();
+
+                    if (PageDirection == ">")
+                    {
+                        var nextPage = dvdPager.GetNextPage();
+                        nextPage.ForEach(item =>
+                        {
+                            Console.WriteLine($"{item.Title} -- {item.Genre}");
+                        });
+                    }
+                    else if (PageDirection == "<")
+                    {
+                        var nextPage = dvdPager.GetPreviousPage();
+                        nextPage.ForEach(item =>
+                        {
+                            Console.WriteLine($"{item.Title} -- {item.Genre}");
+                        });
+                    }
+
+
                 }
             }
             else if (userInput == "2")
@@ -95,9 +137,12 @@ namespace genericsIntro
                 }
                 while (true)
                 {
-                    Console.WriteLine("Type > or < to go Forward or Back");
+                    Console.WriteLine("Type > or < to go Forward or Back, Hit Enter without typing anything to go back.");
                     var PageDirection = Console.ReadLine();
-
+                    if (PageDirection == "")
+                    {
+                        break;
+                    }
                     Console.Clear();
 
                     if (PageDirection == ">")
